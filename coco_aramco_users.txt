@@ -1,0 +1,53 @@
+username: PulseTiger01, password: Tiger@101 || Location: COCO ARAMCO 1 - LIBERTY
+username: FrostFalcon02, password: Falcon@102 || Location: COCO ARAMCO 2 - EMBASSY
+username: BlazeOtter03, password: Otter@103 || Location: COCO ARAMCO 3 - EXPO
+username: ShadowHawk04, password: Hawk@104 || Location: COCO ARAMCO 4 - SHAHDRA
+username: SwiftEagle05, password: Eagle@105 || Location: COCO ARAMCO 5 - HAYATABAD
+username: QuantumSparrow06, password: Sparrow@106 || Location: COCO ARAMCO 6 - WAZIRABAD
+username: StellarWolf07, password: Wolf@107 || Location: COCO ARAMCO 7 - UCH NORTH
+username: EmberLion08, password: Lion@108 || Location: COCO ARAMCO 8 - UCH SOUTH
+username: LunarRobin09, password: Robin@109 || Location: COCO ARAMCO 9 - RASHID MINHAS
+username: ThunderFox10, password: Fox@110 || Location: COCO ARAMCO 10 - WAHDAT
+username: NoblePanther11, password: Panther@111 || Location: COCO ARAMCO 11 - FAISALABAD
+username: MysticHeron12, password: Heron@112 || Location: COCO ARAMCO 12 - SABZAZAR
+username: GlacialOtter13, password: Otter@113 || Location: COCO ARAMCO 13 - FAISAL TOWN
+username: BlazeCobra14, password: Cobra@114 || Location: COCO ARAMCO 14 - GUJRANWALA
+username: ArcticRhino15, password: Rhino@115 || Location: COCO ARAMCO 15 - MULTAN
+username: NeonRaven16, password: Raven@116 || Location: COCO ARAMCO 16 - SIALKOT
+username: SolarJaguar17, password: Jaguar@117 || Location: COCO ARAMCO 17 - KAHNEWAL
+username: LunaBear18, password: Bear@118 || Location: COCO ARAMCO 18 - SADAR LAHORE
+username: MysticEagle19, password: Eagle@119 || Location: COCO ARAMCO 19 - LYALPUR FAISALABAD
+username: EmberHorse20, password: Horse@120 || Location: COCO ARAMCO 20 - G1 JOHAR TOWN
+username: FrostBison21, password: Bison@121 || Location: COCO ARAMCO 21 SARAI ALAMGIR
+username: SolarStag22, password: Stag@122 || Location: COCO ARAMCO 22 SARGODHA ROAD
+username: ZenithHawk23, password: Hawk@123 || Location: COCO ARAMCO 23 - WALTON
+username: ArcticWolf24, password: Wolf@124 || Location: COCO ARAMCO 24 - MK
+username: QuantumCrane25, password: Crane@125 || Location: COCO ARAMCO 25 - ATTOCK
+username: PulseBear26, password: Bear@126 || Location: COCO ARAMCO 26 - TIPU ROAD
+username: LavaFalcon27, password: Falcon@127 || Location: COCO ARAMCO  27 - LODHRAN
+username: StellarCheetah28, password: Cheetah@128 || Location: COCO ARAMCO 28 - RAIWIND
+username: BlazeStag29, password: Stag@129 || Location: COCO Aramco 29 - SARGODHA
+username: MysticLion30, password: Lion@130 || Location: COCO Aramco 30 - HARRAPA
+username: NeonOtter31, password: Otter@131 || Location: COCO Aramco 31 - COLLEGE ROAD
+username: FrostHorse32, password: Horse@132 || Location: COCO ARAMCO 32 - ferozpur road
+username: ShadowBear33, password: Bear@133 || Location: COCO ARAMCO  33 - Shadman
+username: EmberBison34, password: Bison@134 || Location: COCO ARAMCO 34 - Bhalwal
+username: QuantumJaguar35, password: Jaguar@135 || Location: COCO Aramco 35 - CANAL ROAD
+username: ArcticStag36, password: Stag@136 || Location: COCO Aramco 36 - UET
+username: LavaHorse37, password: Horse@137 || Location: COCO Aramco 37 - SARGODHA ROAD 
+username: ZenithPanther38, password: Panther@138 || Location: COCO ARAMCO 38 - CHUNG
+username: StellarFalcon39, password: Falcon@139 || Location: COCO ARAMCO 39 - GUJRANWALA 2
+username: BlazeLion40, password: Lion@140 || Location: COCO ARAMCO 40 - Phool nagar
+username: PulseJaguar41, password: Jaguar@141 || Location: COCO ARAMCO 41 - Charsadda
+username: ThunderRhino42, password: Rhino@142 || Location: COCO ARAMCO 42 - Bahwal Nagar
+username: MysticCrane43, password: Crane@143 || Location: COCO ARAMCO 43 - rawalpindi PAF Jinnah complex
+username: ArcticRobin44, password: Robin@144 || Location: COCO ARAMCO 44 - Moon Market lahore
+username: EmberTiger45, password: Tiger@145 || Location: COCO ARAMCO 45 - Nazimabad
+username: LunaSparrow46, password: Sparrow@146 || Location: COCO ARAMCO 46- Mangalla
+username: BlazeWolf47, password: Wolf@147 || Location: COCO ARAMCO 47 - Wireless Gate
+username: QuantumFalcon48, password: Falcon@148 || Location: COCO ARAMCO 48- Sialkot 2
+username: LunaBear49, password: Bear@149 || Location: COCO ARAMCO 49- Sahiwal
+username: NeonCrane50, password: Crane@150 || Location: COCO ARAMCO 50 - Islamabad Srinagar Highway
+username: PulseOtter51, password: Otter@151 || Location: COCO ARAMCO 51 Chiniot
+username: EmberRobin52, password: Robin@152 || Location: COCO ARAMCO 52 Multan 2
+username: SolarPanther53, password: Panther@153 || Location: COCO ARAMCO 53 Larkana
