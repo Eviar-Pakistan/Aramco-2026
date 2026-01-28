@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp.views import home,submit_bonus_entry
-from myapp.views import register,send_sms,operator_login
+from myapp.views import register,send_sms,operator_login,valvoline,profone
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +26,6 @@ urlpatterns = [
     path('submit_bonus_entry/',submit_bonus_entry, name='submit_bonus_entry'),
     path("api/register", register, name="register"),
     path('send_sms', send_sms, name='send_sms'),
+    path('valvoline/', valvoline, name='valvoline'),
+    path('profone/', profone, name='profone'),
 ]

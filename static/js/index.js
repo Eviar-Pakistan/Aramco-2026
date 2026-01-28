@@ -130,20 +130,21 @@ submitButton && submitButton.addEventListener('click', async (e) => {
   const vehicle = document.getElementById("vehicle").value.trim();
   const receipt = document.getElementById("receipt").value.trim();
   const checkbox = document.getElementById("checkbox2").checked
-  const vehicleTypeEncoded = new URLSearchParams(window.location.search).get('vehicle');
+  // const vehicleTypeEncoded = new URLSearchParams(window.location.search).get('vehicle');
   const cityEncoded = new URLSearchParams(window.location.search).get('station');
-  const operator = localStorage.getItem("company")
-  let vehicleType = null;
+  const operator = localStorage.getItem("company");
+  const vehicleType = document.getElementById("vehicle_type").value.trim();
+ 
   let city = null;
 
-  if (vehicleTypeEncoded) {
-      try {
-          vehicleType = atob(vehicleTypeEncoded);
-      } catch (error) {
-          console.error("Error decoding vehicle type:", error);
-          vehicleType = null;
-      }
-  }
+  // if (vehicleTypeEncoded) {
+  //     try {
+  //         vehicleType = atob(vehicleTypeEncoded);
+  //     } catch (error) {
+  //         console.error("Error decoding vehicle type:", error);
+  //         vehicleType = null;
+  //     }
+  // }
 
   if (cityEncoded) {
       try {
@@ -159,7 +160,7 @@ submitButton && submitButton.addEventListener('click', async (e) => {
         if (company === "Aramcocooperator"){
             if (localStorage.getItem('company') !== companyEncoded) {
                 localStorage.setItem('company', companyEncoded);
-                window.location.href = `/operator_login/?vehicle=${vehicleTypeEncoded}&station=${cityEncoded}`;
+                window.location.href = `/operator_login/?vehicle=${ve}&station=${cityEncoded}${companyEncoded ? `&company=${companyEncoded}` : ''}`;
                 localStorage.removeItem('submittedEntries');
             }
         }
@@ -457,7 +458,7 @@ loginForm && loginForm.addEventListener("submit", async (e) => {
         icon: 'success',
       });
       // Redirect to the bonus entry page or any other page after successful login
-      window.location.href = `/?vehicle=${vehicleTypeEncoded}&station=${cityEncoded}`; // Example: redirect to another page after success
+      window.location.href = `/?vehicle=${vehicleType}&station=${cityEncoded}`; // Example: redirect to another page after success
       localStorage.setItem("isLoggedIn",true)
     } else {
       Swal.fire({

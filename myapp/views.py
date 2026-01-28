@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Participant
+from .models import UserEntry
 import json
 import requests
 
@@ -89,34 +90,55 @@ def register(request):
             location = data.get('location', {})
             latitude = location.get('latitude')
             longitude = location.get('longitude')
+            litres = data.get('litres')
             
             # Check if the contact already exists in the database
-            participant = Participant.objects.filter(contact=contact).first()
 
-            if participant:
+            user_entry = UserEntry.objects.filter(contact=contact).first()
+            if user_entry:
                 # If the participant exists, check their entry count
-                if participant.entry_count >= 4:
+                if user_entry.entry_count >= 4:
                     return JsonResponse({"error": "You have already reached the maximum of 4 entries."}, status=400)
                 else:
                     # Increment the entry count
-                    participant.entry_count += 1
+                    user_entry.entry_count += 1
+                    user_entry.save()
+
+                    participant = Participant.objects.create(
+                        name=data.get("name"),
+                        contact=contact,
+                        email=data.get("email"),
+                        fuel_type=data.get("fuel_type"),
+                        cnic=data.get("cnic"),
+                        vehicle_number=data.get("vehicle_number"),
+                        receipt_number=data.get("receipt_number"),
+                        latitude=latitude,
+                        longitude=longitude,
+                        vehicle=data.get('vehicle'),
+                        city=data.get('city'),
+                        operator=data.get('operator'),
+                        litres=litres
+                    )
                     participant.save()
             else:
                 # If the participant doesn't exist, create a new one with entry_count = 1
+                user_entry = UserEntry.objects.create(
+                    contact=contact,
+                    entry_count=1,
+                )
                 participant = Participant.objects.create(
                     name=data.get("name"),
                     contact=contact,
                     email=data.get("email"),
                     fuel_type=data.get("fuel_type"),
-                    cnic = data.get("cnic"),
+                    cnic=data.get("cnic"),
                     vehicle_number=data.get("vehicle_number"),
                     receipt_number=data.get("receipt_number"),
                     latitude=latitude,
                     longitude=longitude,
                     vehicle=data.get('vehicle'),
-                    city= data.get('city'),
-                    operator = data.get('operator'),
-                    entry_count=1,  
+                    city=data.get('city'),
+                    operator=data.get('operator'),
                 )
             
             return JsonResponse({"message": "Registration successful!", "id": participant.id}, status=201)
@@ -195,5 +217,11 @@ def submit_bonus_entry(request):
 
     # For non-POST requests, render the form template.
     return render(request, 'bonusform.html')
+
+def valvoline(request):
+    return render(request, 'valvoline.html')
+
+def profone(request):
+    return render(request, 'profone.html')
 
 

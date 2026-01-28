@@ -12,16 +12,24 @@ class Participant(models.Model):
     fuel_type = models.CharField(max_length=20)
     cnic = models.CharField(max_length=50,null=True, blank=True)
     receipt_number = models.CharField(max_length=50)
-    entry_count = models.IntegerField(default=0)
     latitude = models.FloatField(null=True, blank=True)   
     longitude = models.FloatField(null=True, blank=True)  
     vehicle = models.CharField(max_length=50 , null=True , blank=True)  
     city = models.CharField(max_length=50 , null=True , blank=True)  
     operator = models.CharField(max_length=50 , null=True , blank=True)  
+    litres = models.FloatField(max_length=50,null=True, blank=True)
     def __str__(self):
         return self.name
 
 
+class UserEntry(models.Model):
+    contact = models.CharField(max_length=15)
+    entry_count = models.IntegerField(default=0)
+    
+
+
+    def __str__(self):
+        return f"UserEntry for {self.contact} on {self.date}"
     
 
 class BonusEntry(models.Model):
